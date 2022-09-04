@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../Imagenes/bubble2.png);
+    background-repeat: repeat;
+}
+
+h1,h2,h3,h4,h5{
+    color:black;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Mobile First- 1 Columna y 8 filas*/
+
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav" 
+    "header"  
+    "area1"  
+    "galeria" 
+    "area2"
+    "area3" 
+    "area4" 
+    "pie";
+}
+
+
+.encabezado{
+    grid-area: header;
+}
+.gridArea1{
+    grid-area: area1;
+}
+
+.gridArea2{
+    grid-area: area2;
+
+}
+
+.gridArea3{
+    grid-area: area3
+}
+.gridArea4{
+    grid-area: area4
+}
+
+
+
+
+.botonera img{
+    width: 150px;
+}
+.botonera{
+    background-color: rgba(135, 231, 158, 0.7);
+    position: sticky;
+    top: 0;    
+    padding: 6px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    grid-area: nav;
+
+}
+
+    .botonera ul{
+        list-style: none;
+        display: flex;
+       
+    }
+
+
+        .botonera ul li{
+                list-style: none;
+                margin-right: 20px;
+        } 
+            .botonera ul li a{
+                color:black;
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                font-size: 2rem;
+                
+
+                
+            }
+            .botonera ul li a:hover{
+                text-decoration: underline;
+                
+            }
+
+.encabezado__img--fluid{
+    width: 100%;
+}
+
+.bgWaterGreen{
+    background-color: rgba(135, 231, 158, 0.7);
+}
+.bgSlateGray{
+    background-color:rgba(93, 103, 112, 1)
+}
+
+.bgWhight{
+    background-color: white;
+}
+
+.textCenter{
+    text-align: center;
+    
+}
+
+.pie{
+    text-align: center;
+    padding: 6px 20px;
+
+
+    
+    grid-area: pie
+    
+}
+    .pie__titulo--md{
+           font-size: 2rem;
+    }
+    .pie__icon--sm{
+            width: 35px;
+    }
+    .pie__logo--md{
+            width: 60px;
+    }
+
+
+
+
+.skyenergy__titulo--xxl{
+    font-size: 4rem;
+    
+}
+.skyenergy__titulos--xl{
+    font-size: 3rem;
+    
+}
+.skyenergy__text--md{
+    color:rgba(93, 103, 112, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 2.2;
+    font-weight: 400;
+}
+.skyenergy__articulo{
+    width: 98%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 20px;
+    border: solid black 2px;
+    overflow-y: auto;  
+}
+
+
+.carrusel__titulo--md{
+    font-size: 2.5rem;
+    
+}
+.carrusel__text--md{
+    color:rgba(135, 231, 158, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 2.2;
+    font-weight: 400;
+}
+.carrusel__articulo{
+    width: 90%;
+    height: auto;
+    margin:  50px auto;
+    padding: 40px 20px;
+    
+    overflow-y: auto;
+}
+
+.galeria{
+
+    width: 98%;
+    height: auto;
+    margin:  50px auto;
+    padding: 10px 20px;
+    
+    
+    
+     grid-area: galeria;
+
+}
+
+    .galeria img{
+    border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	width: 100%;
+    margin: 10px;
+
+    }
+
+
+
+
+/*Paneles solares*/
+
+.contenedor2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav" 
+    "header" 
+    "panel" 
+    "texto" 
+    "video1" 
+    "fotosP" 
+    "productosP" 
+    "p1"  
+    "p2"
+    "presupuesto" 
+    "pie";
+}
+th,td{
+    color:rgba(93, 103, 112, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 2.2;
+    font-weight: 400;
+}
+.panelSolar{
+    grid-area: panel;
+}
+
+.diferenciasGrid{
+    grid-area: texto;
+}
+.video1{
+    grid-area: video1;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+.fotosPanel{
+    grid-area: fotosP;
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.productosPanel{
+    grid-area: productosP;
+}
+.productoP1{
+    grid-area: p1;
+    
+}
+.productoP2{
+    grid-area: p2;
+    
+}
+.presupuesto{
+    grid-area: presupuesto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px 5px;
+    width: 80%;
+}
+
+.titulo--xxl{
+    font-size: 4rem;
+    
+    
+}
+.titulos--xl{
+    font-size: 3rem;
+    
+}
+.titulo--md{
+    font-size: 2.5rem;
+    padding: 10px;
+    
+}
+.text--md{
+    color:rgba(93, 103, 112, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 2.2;
+    font-weight: 400;
+}
+.box{
+    width: 98%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 20px;
+    border: solid black 2px;
+    overflow-y: auto;  
+}
+.box2{
+    width: 98%;
+    height: auto;
+    margin: 2px auto;
+    padding: 2px 2px;
+    border: solid black 2px;
+    overflow-y: auto;  
+}
+
+
+/*Termo-tanques*/
+
+.contenedor3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav" 
+    "header" 
+    "tituloT" 
+    "video2" 
+    "textoT"
+    "datosT" 
+    "pie";
+}
+
+.termo{
+    grid-area: tituloT;
+}
+.videoTermo{
+    grid-area: video2;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.caracteristicaTermo{
+    grid-area: textoT
+}
+.datosUtilesTermo{
+    grid-area: datosT;
+    margin-top: 20px;
+
+}
+
+
+/* Baterias de litio*/
+
+.contenedor4{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav" 
+    "header" 
+    "bateria" 
+    "fotoB" 
+    "tituloB" 
+    "textoB" 
+    "b1" 
+    "b2" 
+    "b3" 
+    "productoB" 
+    "pB" 
+    "pie";
+    
+}
+
+.bateriaLitio{
+    grid-area: bateria;
+}
+.funcionamientoTitulo{
+    grid-area: tituloB;
+}
+.funcionamientoTexto{
+    grid-area: textoB;
+}
+.imagenLitioBox{
+    grid-area: fotoB;
+    
+}
+.monitoriable{
+    grid-area: b1;
+}
+.modulares{
+    grid-area: b2;
+}
+.silenciosas{
+    grid-area: b3;
+}
+.productosBateriaTitulo{
+    grid-area: productoB;
+    padding: 20px;
+    
+    
+}
+.productosB{
+    grid-area: pB;
+}
+
+.monitoriable p,
+.modulares p,
+.silenciosas p{
+    color:rgba(135, 231, 158, 1);
+}
+
+
+
+/*Contacto*/
+
+.contenedor5{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav" 
+    "tituloC" 
+    "beneficios" 
+    "info" 
+    "mapa" 
+    "pie";
+}
+
+.contactoTitulo{
+    grid-area: tituloC;
+}
+.informacionDeContacto{
+    grid-area: info;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mapaLocalizacion{
+    grid-area: mapa;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.losMejoresBeneficios{
+    grid-area: beneficios;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+label,input{
+    color:rgba(93, 103, 112, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 2.2;
+    font-weight: 400;
+}
+
+.losMejoresBeneficios .logos figure{
+    margin: 10px 0;
+}
+
+.losMejoresBeneficios .logos figure figcaption{
+    color:rgba(93, 103, 112, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    line-height: 2.2;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+/*break points*/
+
+@media (min-width: 1024px){
+    .contenedor{
+        
+        grid-template-columns: 25vw 50vw 25vw;
+        
+         grid-template-areas: 
+         "nav nav nav" 
+         "header header header" 
+         "area1 area1 area1" 
+         "area2 area2 area2"
+         "area3 galeria area4" 
+         "pie pie pie";
+    }
+     .galeria{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+
+      }
+    
+    .botonera{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contenedor2{
+        grid-template-columns: 30vw 40vw 30vw;
+        grid-template-areas: 
+        "nav nav nav" 
+        "header header header" 
+        "panel panel panel"
+        "texto video1 fotosP"
+        "productosP productosP productosP" 
+        "p1 . p2"
+        "presupuesto presupuesto presupuesto"
+        "pie pie pie";
+    }    
+     
+    .presupuesto img{
+        width: 70%;
+    }
+
+    .contenedor3{
+        grid-template-columns: 35vw 45vw 20vw;
+        grid-template-areas: 
+        "nav nav nav" 
+        "header header header" 
+        "tituloT tituloT tituloT" 
+        "textoT video2 datosT" 
+        "pie pie pie";
+    }
+
+
+    .contenedor4{
+        grid-template-columns: 30vw 30vw 40vw;
+        grid-template-areas: 
+        "nav nav nav" 
+        "header header header" 
+        "bateria bateria bateria" 
+        "tituloB textoB fotoB" 
+        "b1 b2 b3" 
+        "productoB productoB ProductoB" 
+        "pB pB pB"
+        "pie pie pie";
+    }
+
+    .contenedor5{
+        grid-template-columns: 30vw 40vw 30vw;
+        grid-template-areas: 
+        "nav nav nav" 
+        "tituloC tituloC tituloC" 
+        "info beneficios mapa"
+        "pie pie pie";
+    }
+    .losMejoresBeneficios{
+        margin-top: 50px;
+
+    }
+
+}
