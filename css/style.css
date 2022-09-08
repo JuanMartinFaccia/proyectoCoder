@@ -528,10 +528,7 @@ label,input{
 
       }
     
-    .botonera{
-        flex-direction: row;
-        justify-content: space-between;
-    }
+    
 
     .contenedor2{
         grid-template-columns: 30vw 40vw 30vw;

@@ -6,34 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sky Energy - energías renovables</title>
     <link rel="shortcut icon" href="Imagenes\favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/animate.css">
+     <!--CSS BS-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 
 </head>
 <body>
 <div class="contenedor">
      
-    <nav class="botonera">
-        <a href="index.html">
-        <img src="Imagenes/logo Sky Energy02.png" alt="logo de Sky Energy">
-        </a>
-        
-        <ul>
-            <li>
-                <a href="paneles-solares.html">Paneles Solares</a>
-            </li>
-            <li>
-                <a href="termotanques-solares.html">Termotanques Solares</a>
-            </li>
-            <li>
-                <a href="baterias-litio.html">Baterias de Litio</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-        
-    </nav>
+    <!--inicia nav BS-->
+   
+    <nav class="navbar navbar-expand-lg botonera navbar-light bgWaterGreen">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="Imagenes/logo Sky Energy02.png" alt="logo de Sky Energy">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="paneles-solares.html">Paneles Solares</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="termotanques-solares.html">Termotanques Solares</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="baterias-litio.html">Baterias de Litio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>               
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+    <!--termina nav-->
     
     <header class="encabezado">
         <img src=".//Imagenes/fondo04.webp" alt="Foto de Panel solar" class="encabezado__img--fluid">
@@ -57,15 +70,39 @@
     <section class="gridArea2 wow flip">
         <h2 class="textCenter skyenergy__titulos--xl degrade">La Energía Solar</h2>
     </section>    
-    <section class="galeria wow backInUp">
-        <div>                        
-            <img src="./Imagenes/fondo3.jpg" alt="foto paneles solares y turbinas eolicas representando la inclucion ecologica en la sociedad">
-        
-            <img src="./Imagenes/panel solar04.jpg" alt="foto de panel solar">    
-            <img src="./Imagenes/turbina eolica.jpg" alt="foto de un grupo de turbinas eolicas">
-            
-            <img src="./Imagenes/fondo de pantalla.jpg" alt="foto en conjunto de turbinas eolicas"> 
-        </div>     
+    <section class="galeria">
+         <!--carrucel fotos-->
+         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Imagenes/fondo3.jpg" class="d-block w-100" alt="foto paneles solares y turbinas eolicas representando la inclucion ecologica en la sociedad">
+              </div>
+              <div class="carousel-item">
+                <img src="./Imagenes/panel solar04.jpg" class="d-block w-100" alt="foto de panel solar">
+              </div>
+              <div class="carousel-item">
+                <img src="./Imagenes/turbina eolica.jpg" class="d-block w-100" alt="foto de un grupo de turbinas eolicas">
+              </div>
+              <div class="carousel-item">
+                <img src="./Imagenes/fondo de pantalla.jpg" class="d-block w-100" alt="foto en conjunto de turbinas eolicas">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--carrucel fotos-->      
     </section> 
     <article class="gridArea3 wow fadeInLeftBig">
             <div class="gridArea3 bgWhight carrusel__articulo">
@@ -107,10 +144,12 @@
             <img src="Imagenes/linkedin-icon.png" alt="seguinos en linkedin" class="pie__icon--sm">
         </a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
-    </script>   
+    </script>  
 </div>    
 </body>
 
