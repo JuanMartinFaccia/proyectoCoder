@@ -105,7 +105,7 @@ h1,h2,h3,h4,h5{
             }
 
 .encabezado__img--fluid{
-    width: 100%;
+    width: 100vw;
 }
 
 .bgWaterGreen{
@@ -585,4 +585,3 @@ label,input{
     background: linear-gradient(to right, white,rgba(135, 231, 158, 1) )
    }
 
-   
