@@ -521,12 +521,7 @@ label,input{
          "area3 galeria area4" 
          "pie pie pie";
     }
-     .galeria{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-around;
-
-      }
+     
     
     
 
