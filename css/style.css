@@ -123,6 +123,9 @@ h1,h2,h3,h4,h5{
     text-align: center;
     
 }
+.acordion p{
+    background-color: rgba(135, 231, 158, 0.7);
+}
 
 .pie{
     text-align: center;
