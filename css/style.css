@@ -238,12 +238,19 @@ h1,h2,h3,h4,h5{
     "pie";
 }
 th,td{
-    color:rgba(93, 103, 112, 1);
+    
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     line-height: 2.2;
     font-weight: 400;
 }
+th{
+  color: black;
+}
+td{
+  color:rgba(93, 103, 112, 1);
+}
+
 .panelSolar{
     grid-area: panel;
 }
@@ -271,11 +278,11 @@ th,td{
 }
 .productoP1{
     grid-area: p1;
-    
+    margin: 10px;
 }
 .productoP2{
     grid-area: p2;
-    
+    margin: 10px;
 }
 
 
@@ -405,6 +412,7 @@ th,td{
 }
 .productosB{
     grid-area: pB;
+    margin: 10px;
 }
 
 .presupuesto{
