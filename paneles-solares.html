@@ -63,16 +63,36 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/B3wvWejPPME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     <section class="fotosPanel">
-        <img src="./Imagenes/off grid.png" alt="imagen que describe el funcionamiento off grid">
-        <img src="./Imagenes/on grid.png" alt="imagen que describe el funcionamiento on gridd">
+
+      <!--inicia carousel BS-->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Imagenes/off grid.png" class="d-block w-100" alt="imagen que describe el funcionamiento off grid">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/on grid.png" class="d-block w-100" alt="imagen que describe el funcionamiento on gridd">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--termina carousel BS-->
     </section>
     <section class="productosPanel">
         <h2 class="titulos--xl textCenter">Produsctos</h2>
     </section>
     <div class="productoP1">
         <h3 class="titulo--md textCenter">Lista de kits off- grid</h3>   
-        
-        <table border="5px" cellpadding="5px" cellspacing="5px" class="box2 bgWhight" >
+        <div>
+          <table border="2px" class="table table-bordered table-striped bgWaterGreen">
             <tr>
                 <th>KIT</th>
                 <th>Componentes</th>
@@ -99,11 +119,12 @@
                 <td>82%</td>
             </tr>
             </table>
+        </div>
     </div>
     <div class="productoP2">
          <h3 class="titulo--md textCenter">Lista de kits on-grid</h3>       
-                
-        <table border="5px" cellpadding="5px" cellspacing="5px" class="box2 bgWhight">
+         <div class="table-responsive">      
+             <table border="2px" class="table table-bordered table-striped bgWaterGreen">
                         <tr>
                             <th>KIT</th>
                             <th>Inversor</th>
@@ -135,7 +156,7 @@
                             <td>80 paneles solares 335W</td>
                         </tr>
                 </table>
-            
+            </div> 
         </div>
 
         <section class="presupuesto">
