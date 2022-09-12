@@ -267,8 +267,9 @@ td{
 }
 .fotosPanel{
     grid-area: fotosP;
-    padding: 10px;
-    margin-top: 15px;
+    
+   
+    padding: 10px ;
     display: flex;
     justify-content: center;
     flex-direction: column;
