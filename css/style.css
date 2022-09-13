@@ -594,8 +594,13 @@ label,input{
     }
 
 }
-
+/*animaciones y degrades*/
 .degrade{
     background: linear-gradient(to right, white,rgba(135, 231, 158, 1) )
    }
 
+   .scale:hover{
+    transform: scale(1.2);         
+    cursor: pointer;    
+    transition: 1s;
+}
