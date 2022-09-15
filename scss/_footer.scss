@@ -1,0 +1,19 @@
+//pie
+
+
+.pie{
+    text-align: center;
+    padding: 6px 20px;
+ 
+    grid-area: pie
+    
+}
+.pie__titulo--md{
+           font-size: $textSm;
+}
+.pie__icon--sm{
+            width: 35px;
+}
+.pie__logo--md{
+            width: 60px;
+}

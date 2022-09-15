@@ -1,0 +1,49 @@
+//nesting  (anidacion)
+
+.botonera{
+    background-color: $mainColor;
+    position: sticky;
+    top: 0;    
+    grid-area: nav;
+    img{
+        width: 150px;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            list-style: none;
+            margin-right: 20px;
+            a{
+                color:$secondaryColor;
+                text-decoration: none;
+                font-family: $mainFont;
+                font-size: $textSm; 
+                 &:hover{
+                    text-decoration: underline;
+                    
+                }      
+            }
+        } 
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

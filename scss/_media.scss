@@ -1,0 +1,70 @@
+//Break points
+
+@media (min-width: 1024px){
+    .contenedor{
+        
+        grid-template-columns: 25vw 50vw 25vw;
+        
+         grid-template-areas: 
+         "nav nav nav" 
+         "header header header" 
+         "area1 area1 area1" 
+         "area2 area2 area2"
+         "area3 galeria area4" 
+         "pie pie pie";
+    }
+     
+    .contenedor2{
+        grid-template-columns: 30vw 20vw 20vw 30vw;
+        grid-template-areas: 
+        "nav nav nav nav" 
+        "header header header header" 
+        "panel panel panel panel"
+        "texto video1 video1 fotosP"
+        "productosP productosP productosP productosP" 
+        "p1 p1 p2 p2"
+        "presupuesto presupuesto presupuesto presupuesto"
+        "pie pie pie pie";
+    }    
+     
+    .contenedor3{
+        grid-template-columns: 35vw 45vw 20vw;
+        grid-template-areas: 
+        "nav nav nav" 
+        "header header header" 
+        "tituloT tituloT tituloT" 
+        "textoT video2 datosT" 
+        "presupuesto presupuesto presupuesto"
+        "pie pie pie";
+    }
+
+    .contenedor4{
+        grid-template-columns: 30vw 30vw 40vw;
+        grid-template-areas: 
+        "nav nav nav" 
+        "header header header" 
+        "bateria bateria bateria" 
+        "tituloB textoB fotoB" 
+        "b1 b2 b3" 
+        "productoB productoB ProductoB" 
+        "pB pB pB"
+        "presupuesto presupuesto presupuesto"
+        "pie pie pie";
+    }
+
+    .contenedor5{
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: 
+        "nav nav" 
+        "tituloC tituloC"   
+        "info mapa"
+        "beneficios beneficios"
+        "A B"
+        "pie pie";
+    }
+    .losMejoresBeneficios{
+        margin-top: 50px;
+
+    }
+
+}

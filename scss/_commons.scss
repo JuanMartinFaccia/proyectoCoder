@@ -1,0 +1,35 @@
+//VARS esquema de colores
+
+$mainColor:rgba(135, 231, 158, 1);
+$secondaryColor:black;
+$textColor:rgba(93, 103, 112, 1);
+$keyColor:white;
+
+//Backgrouns
+
+.bgWaterGreen{
+    background-color: $mainColor;
+}
+.bgSlateGray{
+    background-color:$textColor;
+}
+
+.bgWhight{
+    background-color:$keyColor;
+
+}
+//
+
+body{
+    background-image: url(../Imagenes/bubble2.png);
+    background-repeat: repeat;
+}
+
+h1,h2,h3,h4,h5{
+    color:$secondaryColor;
+    font-family: $mainfont;
+}
+.textCenter{
+    text-align: center;
+    
+}
