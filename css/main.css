@@ -241,6 +241,33 @@ h1, h2, h3, h4, h5 {
   overflow-y: auto;
 }
 
+.contenedor3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "header" "tituloT" "video2" "textoT" "datosT" "presupuesto" "pie";
+}
+
+.termo {
+  grid-area: tituloT;
+}
+
+.videoTermo {
+  grid-area: video2;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.caracteristicaTermo {
+  grid-area: textoT;
+}
+
+.datosUtilesTermo {
+  grid-area: datosT;
+  margin-top: 20px;
+}
+
 .pie {
   text-align: center;
   padding: 6px 20px;

@@ -139,7 +139,7 @@ h1,h2,h3,h4,h5{
 }
 .video1{
     grid-area: video1;
-    
+
     display: flex;
     justify-content: center;
     padding-top: 20px;
@@ -182,4 +182,47 @@ h1,h2,h3,h4,h5{
     overflow-y: auto;  
 }
 //temina paneles solares
+
+//termoanques-inicio
+//termotanques mobile first -nav y pie idem-
+
+
+.contenedor3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav" 
+    "header" 
+    "tituloT" 
+    "video2" 
+    "textoT"
+    "datosT" 
+    "presupuesto"
+    "pie";
+}
+
+.termo{
+    grid-area: tituloT;
+}
+.videoTermo{
+    grid-area: video2;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.caracteristicaTermo{
+
+    grid-area: textoT
+}
+.datosUtilesTermo{
+
+    grid-area: datosT;
+    margin-top: 20px;
+}
+//termotanques-fin
+
+//batertias de litio-inicio
+//mobile first -nav y pie idem-
 
