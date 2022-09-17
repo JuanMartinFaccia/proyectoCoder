@@ -26,10 +26,33 @@ $lineHeight:2.2;
 $lineHeightTable:2;
 
 //
-
+h1,h2,h3,h4,h5{
+    color:$secondaryColor;
+    font-family:$mainfont;
+}
 .textCenter{
     text-align: center;
     
+}
+//index
+.skyenergy__titulo--xxl{
+    font-size: $tituloLg;
+    
+}
+.skyenergy__titulos--xl{
+    font-size: $tituloMd;
+    
+}
+.carrusel__titulo--md{
+    font-size: $tituloSm;
+    
+}
+.skyenergy__text--md{
+    color:$textColor;
+    font-family: $mainfont;
+    font-size: $textSm;
+    line-height: $lineHeight;
+    font-weight: $textRegular;
 }
 
 //text table
@@ -72,4 +95,24 @@ th,td{
 .modulares p,
 .silenciosas p{
     color:$mainColor;
+}
+//texto contacto
+
+label,input{
+    color:$textColor;
+    font-family: $mainfont;
+    font-size: $textSm;
+    line-height: $lineHeight;
+    font-weight: $textRegular;
+}
+
+.logos1 figure figcaption,
+.logos2 figure figcaption{
+    color:$textColor;
+    font-family: $mainfont;
+    font-size: $textSm;
+    line-height: $lineHeight;
+    font-weight: $textThin;
+    text-align: center;
+    padding: 10px auto;
 }
