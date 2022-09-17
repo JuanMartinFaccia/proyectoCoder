@@ -25,6 +25,13 @@ body{
     background-repeat: repeat;
 }
 
+//color table text
 
+th{
+    color: $secondaryColor;
+  }
+  td{
+    color: $textColor;
+  }
 
 

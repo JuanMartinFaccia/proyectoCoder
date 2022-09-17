@@ -12,6 +12,7 @@ $tituloMd:3rem;
 $tituloSm:2.5em;
 
 $textSm:2rem;
+$textTable:1.8rem;
 
 //weights(pesos)
 
@@ -22,10 +23,46 @@ $textThin:200;
 //line-height
 
 $lineHeight:2.2;
+$lineHeightTable:2;
 
 //
 
 .textCenter{
     text-align: center;
     
+}
+
+//text table
+
+th,td{
+    
+    font-family: $mainfont;
+    font-size: $textTable;
+    line-height: $lineHeightTable;
+    font-weight: $textRegular
+}
+//titulos tamaño de texto
+
+.titulo--xxl{
+    font-size: $tituloLg;
+    
+    
+}
+.titulos--xl{
+    font-size: $tituloMd;
+    
+}
+.titulo--md{
+    font-size: $tituloSm;
+    padding: 10px;
+    
+}
+//texto p
+
+.text--md{
+    color:$textColor;
+    font-family: $mainfont;
+    font-size: $textSm;
+    line-height: $lineHeight;
+    font-weight: $textRegular;
 }

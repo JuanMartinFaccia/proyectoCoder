@@ -109,4 +109,77 @@ h1,h2,h3,h4,h5{
 }
 //termina index
 
+//paneles solares-inicio
+//mobile fisrt-nav y botonera idem-
+
+.contenedor2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav" 
+    "header" 
+    "panel" 
+    "texto" 
+    "video1" 
+    "fotosP" 
+    "productosP" 
+    "p1"  
+    "p2"
+    "presupuesto" 
+    "pie";
+}
+
+.panelSolar{
+    grid-area: panel;
+}
+
+.diferenciasGrid{
+    grid-area: texto;
+}
+.video1{
+    grid-area: video1;
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+.fotosPanel{
+    grid-area: fotosP;
+    
+    padding: 10px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.productosPanel{
+    grid-area: productosP;
+}
+.productoP1{
+    grid-area: p1;
+    margin: 10px;
+}
+.productoP2{
+    grid-area: p2;
+    margin: 10px;
+}
+
+.box{
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 20px;
+    border: solid $secondaryColor 2px;
+    overflow-y: auto;  
+}
+.box2{
+    width: 98%;
+    height: auto;
+    margin: 2px auto;
+    padding: 2px 2px;
+    border: solid $secondaryColor 2px;
+    overflow-y: auto;  
+}
+//temina paneles solares
 

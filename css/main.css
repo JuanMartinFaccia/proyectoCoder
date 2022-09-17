@@ -16,8 +16,44 @@ body {
   background-repeat: repeat;
 }
 
+th {
+  color: black;
+}
+
+td {
+  color: rgb(93, 103, 112);
+}
+
 .textCenter {
   text-align: center;
+}
+
+th, td {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.titulo--xxl {
+  font-size: 4rem;
+}
+
+.titulos--xl {
+  font-size: 3rem;
+}
+
+.titulo--md {
+  font-size: 2.5em;
+  padding: 10px;
+}
+
+.text--md {
+  color: rgb(93, 103, 112);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.2;
+  font-weight: 400;
 }
 
 .botonera {
@@ -141,6 +177,68 @@ h1, h2, h3, h4, h5 {
 
 .acordion p {
   background-color: rgb(135, 231, 158);
+}
+
+.contenedor2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "header" "panel" "texto" "video1" "fotosP" "productosP" "p1" "p2" "presupuesto" "pie";
+}
+
+.panelSolar {
+  grid-area: panel;
+}
+
+.diferenciasGrid {
+  grid-area: texto;
+}
+
+.video1 {
+  grid-area: video1;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.fotosPanel {
+  grid-area: fotosP;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.productosPanel {
+  grid-area: productosP;
+}
+
+.productoP1 {
+  grid-area: p1;
+  margin: 10px;
+}
+
+.productoP2 {
+  grid-area: p2;
+  margin: 10px;
+}
+
+.box {
+  width: 95%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 20px;
+  border: solid black 2px;
+  overflow-y: auto;
+}
+
+.box2 {
+  width: 98%;
+  height: auto;
+  margin: 2px auto;
+  padding: 2px 2px;
+  border: solid black 2px;
+  overflow-y: auto;
 }
 
 .pie {
