@@ -1,4 +1,8 @@
 //index
+h1,h2,h3,h4,h5{
+    color:$secondaryColor;
+    font-family:$mainfont;
+}
 //index-mobile first
 .contenedor{
     display: grid;
@@ -15,7 +19,7 @@
     "pie";
 }
 
-
+//
 .encabezado{
     grid-area: header;
 }
@@ -93,17 +97,15 @@
     grid-area: galeria;
     img{
         border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	width: 100%;
-    margin: 10px;
+	    border-top-right-radius: 5px;
+	    width: 100%;
+        margin: 10px;
 
     }
 }
 
-.acordion{
-    p{
-        background-color: $mainColor;
-    }
+.acordion p{   
+       background-color: $mainColor;   
 }
 //termina index
 

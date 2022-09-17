@@ -16,7 +16,173 @@ body {
   background-repeat: repeat;
 }
 
+.textCenter {
+  text-align: center;
+}
+
+.botonera {
+  background-color: rgb(135, 231, 158);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  grid-area: nav;
+}
+.botonera img {
+  width: 150px;
+}
+.botonera ul {
+  display: flex;
+  list-style: none;
+}
+.botonera ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+.botonera ul li a {
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+.botonera ul li a:hover {
+  text-decoration: underline;
+}
+
 h1, h2, h3, h4, h5 {
   color: black;
   font-family: "Roboto", sans-serif;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "header" "area1" "galeria" "area2" "area3" "area4" "pie";
+}
+
+.encabezado {
+  grid-area: header;
+}
+
+.gridArea1 {
+  grid-area: area1;
+}
+
+.gridArea2 {
+  grid-area: area2;
+}
+
+.gridArea3 {
+  grid-area: area3;
+}
+
+.gridArea4 {
+  grid-area: area4;
+}
+
+.skyenergy__titulo--xxl {
+  font-size: 4rem;
+}
+
+.skyenergy__titulos--xl {
+  font-size: 3rem;
+}
+
+.carrusel__titulo--md {
+  font-size: 2.5em;
+}
+
+.skyenergy__text--md {
+  color: rgb(93, 103, 112);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.2;
+  font-weight: 400;
+}
+
+.skyenergy__articulo {
+  width: 95%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 20px;
+  border: solid black 2px;
+  overflow-y: auto;
+}
+
+.carrusel__text--md {
+  color: rgb(135, 231, 158);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.2;
+  font-weight: 400;
+}
+
+.carrusel__articulo {
+  width: 90%;
+  height: auto;
+  margin: 50px auto;
+  padding: 40px 20px;
+  overflow-y: auto;
+}
+
+.galeria {
+  width: 98%;
+  height: auto;
+  margin: 50px auto;
+  padding: 10px 20px;
+  grid-area: galeria;
+}
+.galeria img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  margin: 10px;
+}
+
+.acordion p {
+  background-color: rgb(135, 231, 158);
+}
+
+.pie {
+  text-align: center;
+  padding: 6px 20px;
+  grid-area: pie;
+}
+
+.pie__titulo--md {
+  font-size: 2rem;
+}
+
+.pie__icon--sm {
+  width: 35px;
+}
+
+.pie__logo--md {
+  width: 60px;
+}
+
+@media (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: 25vw 50vw 25vw;
+    grid-template-areas: "nav nav nav" "header header header" "area1 area1 area1" "area2 area2 area2" "area3 galeria area4" "pie pie pie";
+  }
+  .contenedor2 {
+    grid-template-columns: 30vw 20vw 20vw 30vw;
+    grid-template-areas: "nav nav nav nav" "header header header header" "panel panel panel panel" "texto video1 video1 fotosP" "productosP productosP productosP productosP" "p1 p1 p2 p2" "presupuesto presupuesto presupuesto presupuesto" "pie pie pie pie";
+  }
+  .contenedor3 {
+    grid-template-columns: 35vw 45vw 20vw;
+    grid-template-areas: "nav nav nav" "header header header" "tituloT tituloT tituloT" "textoT video2 datosT" "presupuesto presupuesto presupuesto" "pie pie pie";
+  }
+  .contenedor4 {
+    grid-template-columns: 30vw 30vw 40vw;
+    grid-template-areas: "nav nav nav" "header header header" "bateria bateria bateria" "tituloB textoB fotoB" "b1 b2 b3" "productoB productoB ProductoB" "pB pB pB" "presupuesto presupuesto presupuesto" "pie pie pie";
+  }
+  .contenedor5 {
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas: "nav nav" "tituloC tituloC" "info mapa" "beneficios beneficios" "A B" "pie pie";
+  }
+  .losMejoresBeneficios {
+    margin-top: 50px;
+  }
 }

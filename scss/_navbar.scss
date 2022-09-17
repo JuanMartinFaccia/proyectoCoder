@@ -1,4 +1,4 @@
-//nesting  (anidacion)
+//nesting  (anidacion) chekear font en botonera
 
 .botonera{
     background-color: $mainColor;
@@ -17,7 +17,7 @@
             a{
                 color:$secondaryColor;
                 text-decoration: none;
-                font-family: $mainFont;
+                font-family:$mainfont ;
                 font-size: $textSm; 
                  &:hover{
                     text-decoration: underline;
