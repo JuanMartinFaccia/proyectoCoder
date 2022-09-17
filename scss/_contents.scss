@@ -223,6 +223,77 @@ h1,h2,h3,h4,h5{
 }
 //termotanques-fin
 
-//batertias de litio-inicio
+//Batertias de litio -inicio-
 //mobile first -nav y pie idem-
+
+/* Baterias de litio*/
+
+.contenedor4{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav" 
+    "header" 
+    "bateria" 
+    "fotoB" 
+    "tituloB" 
+    "textoB" 
+    "b1" 
+    "b2" 
+    "b3" 
+    "productoB" 
+    "pB"
+    "presupuesto" 
+    "pie";
+    
+}
+
+.bateriaLitio{
+    grid-area: bateria;
+}
+.funcionamientoTitulo{
+    grid-area: tituloB;
+}
+.funcionamientoTexto{
+    grid-area: textoB;
+}
+.imagenLitioBox{
+    grid-area: fotoB;
+    
+}
+.monitoriable{
+    grid-area: b1;
+}
+.modulares{
+    grid-area: b2;
+}
+.silenciosas{
+    grid-area: b3;
+}
+.productosBateriaTitulo{
+    grid-area: productoB;
+
+    padding: 20px;   
+}
+.productosB{
+    grid-area: pB;
+
+    margin: 10px;
+}
+
+.presupuesto{
+    grid-area: presupuesto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px 20px;
+}
+//fin- Baterias de litio
+
+//Contacto - inicio
+//contacto mobile first
+
 
