@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing:border-box 
+}
+
 html{
     font-size: 62.5%;
 }
@@ -22,7 +28,8 @@ h1,h2,h3,h4,h5{
 
 .contenedor{
     display: grid;
-    grid-template-columns: 1fr;
+    overflow: hidden;
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: 
     "nav" 
@@ -210,7 +217,8 @@ h1,h2,h3,h4,h5{
 
 .contenedor2{
     display: grid;
-    grid-template-columns: 1fr;
+    overflow: hidden;
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas:
     "nav" 
@@ -318,7 +326,8 @@ td{
 
 .contenedor3{
     display: grid;
-    grid-template-columns: 1fr;
+    overflow: hidden;
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: 
     "nav" 
@@ -354,7 +363,8 @@ td{
 
 .contenedor4{
     display: grid;
-    grid-template-columns: 1fr;
+    overflow: hidden;
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: 
     "nav" 
@@ -426,7 +436,8 @@ td{
 
 .contenedor5{
     display: grid;
-    grid-template-columns: 1fr;
+    overflow: hidden;
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas:
     "nav" 
