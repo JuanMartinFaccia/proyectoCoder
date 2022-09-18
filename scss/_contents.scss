@@ -4,7 +4,8 @@
 //index-mobile first
 .contenedor{
     display: grid;
-    grid-template-columns: 1fr;
+    overflow: hidden;
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: 
     "nav" 
@@ -92,7 +93,8 @@
 
 .contenedor2{
     display: grid;
-    grid-template-columns: 1fr;
+    overflow: hidden;
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas:
     "nav" 
@@ -168,7 +170,8 @@
 
 .contenedor3{
     display: grid;
-    grid-template-columns: 1fr;
+    overflow: hidden;
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: 
     "nav" 
@@ -209,7 +212,8 @@
 
 .contenedor4{
     display: grid;
-    grid-template-columns: 1fr;
+    overflow: hidden;
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: 
     "nav" 
@@ -279,7 +283,8 @@
 
 .contenedor5{
     display: grid;
-    grid-template-columns: 1fr;
+    overflow: hidden;
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas:
     "nav" 

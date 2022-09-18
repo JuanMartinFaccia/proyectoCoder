@@ -11,6 +11,12 @@
   background-color: white;
 }
 
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(../Imagenes/bubble2.png);
   background-repeat: repeat;
@@ -137,7 +143,8 @@ label, input {
 /*index*/
 .contenedor {
   display: grid;
-  grid-template-columns: 1fr;
+  overflow: hidden;
+  grid-template-columns: 100vw;
   grid-template-rows: auto;
   grid-template-areas: "nav" "header" "area1" "galeria" "area2" "area3" "area4" "pie";
 }
@@ -208,7 +215,8 @@ label, input {
 /*paneles solares*/
 .contenedor2 {
   display: grid;
-  grid-template-columns: 1fr;
+  overflow: hidden;
+  grid-template-columns: 100vw;
   grid-template-rows: auto;
   grid-template-areas: "nav" "header" "panel" "texto" "video1" "fotosP" "productosP" "p1" "p2" "presupuesto" "pie";
 }
@@ -271,7 +279,8 @@ label, input {
 /*termotanques*/
 .contenedor3 {
   display: grid;
-  grid-template-columns: 1fr;
+  overflow: hidden;
+  grid-template-columns: 100vw;
   grid-template-rows: auto;
   grid-template-areas: "nav" "header" "tituloT" "video2" "textoT" "datosT" "presupuesto" "pie";
 }
@@ -299,7 +308,8 @@ label, input {
 /* Baterias de litio*/
 .contenedor4 {
   display: grid;
-  grid-template-columns: 1fr;
+  overflow: hidden;
+  grid-template-columns: 100vw;
   grid-template-rows: auto;
   grid-template-areas: "nav" "header" "bateria" "fotoB" "tituloB" "textoB" "b1" "b2" "b3" "productoB" "pB" "presupuesto" "pie";
 }
@@ -354,7 +364,8 @@ label, input {
 /*Contacto*/
 .contenedor5 {
   display: grid;
-  grid-template-columns: 1fr;
+  overflow: hidden;
+  grid-template-columns: 100vw;
   grid-template-rows: auto;
   grid-template-areas: "nav" "tituloC" "beneficios" "A" "B" "info" "mapa" "pie";
 }
