@@ -1,0 +1,10 @@
+/*animaciones y degrades*/
+.degrade{
+    background: linear-gradient(to right,$keyColor,$mainColor )
+   }
+
+   .scale:hover{
+    transform: scale(1.2);         
+    cursor: pointer;    
+    transition: 1s;
+}

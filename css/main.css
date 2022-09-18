@@ -112,6 +112,17 @@ label, input {
   padding: 10px auto;
 }
 
+/*animaciones y degrades*/
+.degrade {
+  background: linear-gradient(to right, white, rgb(135, 231, 158));
+}
+
+.scale:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 1s;
+}
+
 .botonera {
   background-color: rgb(135, 231, 158);
   position: -webkit-sticky;
