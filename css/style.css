@@ -437,17 +437,16 @@ td{
 .contenedor5{
     display: grid;
     overflow: hidden;
-    grid-template-columns: 100vw;
+    grid-template-columns: 50vw 50vw;
     grid-template-rows: auto;
     grid-template-areas:
-    "nav" 
-    "tituloC" 
-    "beneficios"
-    "A"
-    "B"
-    "info" 
-    "mapa" 
-    "pie";
+    "nav nav" 
+    "tituloC tituloC" 
+    "beneficios beneficios"
+    "A B"
+    "info info" 
+    "mapa mapa" 
+    "pie pie";
 }
 
 .contactoTitulo{
@@ -492,14 +491,15 @@ td{
 
 .logos1{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    
 
 }
 
 .logos2{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 
 }
@@ -606,9 +606,11 @@ figure{
         "A B"
         "pie pie";
     }
+    .logos1,.logos2{   
+        flex-direction: row;
+    }
     .losMejoresBeneficios{
         margin-top: 50px;
-
     }
 
 }
