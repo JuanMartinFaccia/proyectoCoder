@@ -112,6 +112,18 @@ label, input {
   padding: 10px auto;
 }
 
+.box-gral, .box-gray {
+  padding: 30px 50px;
+  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.box-gray {
+  background-color: rgb(135, 231, 158);
+}
+
 /*animaciones y degrades*/
 .degrade {
   background: linear-gradient(to right, white, rgb(135, 231, 158));

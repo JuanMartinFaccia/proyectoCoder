@@ -1,0 +1,33 @@
+//box general
+.box-gral{
+    padding: 30px 50px;
+    border: solid 2px $secondaryColor;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+}
+.box-gray{
+    @extend .box-gral;
+    background-color: $mainColor;  
+}
+
+//textos
+//@include textos(2em,2.2em ,black)
+@mixin textos ($size,$interlineado,$color){
+    font-size: $size;
+    line-height: $interlineado;
+    color: $color;
+    margin: 10px 20px;
+    padding: 10px;
+    font-family: $mainFont; 
+}
+
+//flex
+// @include flex(row, center,flex-end ,nowrap )
+@mixin flex ($dire,$justify,$align,$wrap){
+    display: flex;
+    flex-direction: $dire;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
