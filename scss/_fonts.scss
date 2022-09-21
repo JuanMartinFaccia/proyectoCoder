@@ -54,11 +54,12 @@ h1,h2,h3,h4,h5{
     line-height: $lineHeight;
     font-weight: $textRegular;
 }
-
+.acordion p{   
+    background-color: $mainColor;   
+}
 //text table
 
-th,td{
-    
+th,td{   
     font-family: $mainfont;
     font-size: $textTable;
     line-height: $lineHeightTable;
@@ -67,21 +68,23 @@ th,td{
 //titulos tamaño de texto
 
 .titulo--xxl{
-    font-size: $tituloLg;
-    
-    
+    font-size: $tituloLg;   
 }
 .titulos--xl{
-    font-size: $tituloMd;
-    
+    font-size: $tituloMd;   
 }
 .titulo--md{
     font-size: $tituloSm;
-    padding: 10px;
-    
+    padding: 10px;    
 }
 //texto p
-
+.carrusel__text--md{
+    color:$mainColor;
+    font-family: $mainfont;
+    font-size: $textSm;
+    line-height: $lineHeight;
+    font-weight: $textRegular;
+}
 .text--md{
     color:$textColor;
     font-family: $mainfont;

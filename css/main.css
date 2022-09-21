@@ -59,6 +59,10 @@ h1, h2, h3, h4, h5 {
   font-weight: 400;
 }
 
+.acordion p {
+  background-color: rgb(135, 231, 158);
+}
+
 th, td {
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
@@ -77,6 +81,14 @@ th, td {
 .titulo--md {
   font-size: 2.5em;
   padding: 10px;
+}
+
+.carrusel__text--md {
+  color: rgb(135, 231, 158);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.2;
+  font-weight: 400;
 }
 
 .text--md {
@@ -112,16 +124,38 @@ label, input {
   padding: 10px auto;
 }
 
-.box-gral, .box-gray {
-  padding: 30px 50px;
-  border: solid 2px black;
-  display: flex;
-  justify-content: center;
-  align-self: flex-start;
+.box-gral, .skyenergy__articulo, .box-white, .box-green {
+  width: 95%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 20px;
+  border: solid black 2px;
+  overflow-y: auto;
 }
 
-.box-gray {
+.box-green {
   background-color: rgb(135, 231, 158);
+}
+
+.box-white {
+  background-color: white;
+}
+
+.box2 {
+  width: 98%;
+  height: auto;
+  margin: 2px auto;
+  padding: 2px 2px;
+  border: solid black 2px;
+  overflow-y: auto;
+}
+
+.box3, .carrusel__articulo {
+  width: 90%;
+  height: auto;
+  margin: 50px auto;
+  padding: 40px 20px;
+  overflow-y: auto;
 }
 
 /*animaciones y degrades*/
@@ -192,31 +226,6 @@ label, input {
   grid-area: area4;
 }
 
-.skyenergy__articulo {
-  width: 95%;
-  height: auto;
-  margin: 20px auto;
-  padding: 20px 20px;
-  border: solid black 2px;
-  overflow-y: auto;
-}
-
-.carrusel__text--md {
-  color: rgb(135, 231, 158);
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 2.2;
-  font-weight: 400;
-}
-
-.carrusel__articulo {
-  width: 90%;
-  height: auto;
-  margin: 50px auto;
-  padding: 40px 20px;
-  overflow-y: auto;
-}
-
 .galeria {
   width: 98%;
   height: auto;
@@ -229,10 +238,6 @@ label, input {
   border-top-right-radius: 5px;
   width: 100%;
   margin: 10px;
-}
-
-.acordion p {
-  background-color: rgb(135, 231, 158);
 }
 
 /*paneles solares*/
@@ -263,8 +268,9 @@ label, input {
   grid-area: fotosP;
   padding: 10px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .productosPanel {
@@ -279,24 +285,6 @@ label, input {
 .productoP2 {
   grid-area: p2;
   margin: 10px;
-}
-
-.box {
-  width: 95%;
-  height: auto;
-  margin: 20px auto;
-  padding: 20px 20px;
-  border: solid black 2px;
-  overflow-y: auto;
-}
-
-.box2 {
-  width: 98%;
-  height: auto;
-  margin: 2px auto;
-  padding: 2px 2px;
-  border: solid black 2px;
-  overflow-y: auto;
 }
 
 /*termotanques*/
@@ -315,7 +303,9 @@ label, input {
 .videoTermo {
   grid-area: video2;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding-top: 20px;
 }
 
@@ -378,6 +368,7 @@ label, input {
 .presupuesto {
   grid-area: presupuesto;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
@@ -388,8 +379,8 @@ label, input {
 .contenedor5 {
   display: grid;
   overflow: hidden;
-  grid-template-columns: 50vw 50vw;
   grid-template-rows: auto;
+  grid-template-columns: 50vw 50vw;
   grid-template-areas: "nav nav" "tituloC tituloC" "beneficios beneficios" "A B" "info info" "mapa mapa" "pie pie";
 }
 
@@ -408,6 +399,7 @@ label, input {
 .mapaLocalizacion {
   grid-area: mapa;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -428,6 +420,7 @@ label, input {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 form {

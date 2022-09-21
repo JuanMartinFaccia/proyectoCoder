@@ -1,12 +1,8 @@
 //index
 /*index*/
-
 //index-mobile first
 .contenedor{
-    display: grid;
-    overflow: hidden;
-    grid-template-columns: 100vw;
-    grid-template-rows: auto;
+    @include grid(hidden,100vw,auto);
     grid-template-areas: 
     "nav" 
     "header"  
@@ -17,20 +13,15 @@
     "area4" 
     "pie";
 }
-
-//
 .encabezado{
     grid-area: header;
 }
 .gridArea1{
     grid-area: area1;
 }
-
 .gridArea2{
     grid-area: area2;
-
 }
-
 .gridArea3{
     grid-area: area3
 }
@@ -41,49 +32,23 @@
 //index-estructura
 
 .skyenergy__articulo{
-    width: 95%;
-    height: auto;
-    margin: 20px auto;
-    padding: 20px 20px;
-    border: solid $secondaryColor 2px;
-    overflow-y: auto;  
-}
-
-.carrusel__text--md{
-    color:$mainColor;
-    font-family: $mainfont;
-    font-size: $textSm;
-    line-height: $lineHeight;
-    font-weight: $textRegular;
+    @extend .box-gral;
 }
 .carrusel__articulo{
-    width: 90%;
-    height: auto;
-    margin:  50px auto;
-    padding: 40px 20px;
-    
-    overflow-y: auto;
+    @extend .box3;
 }
-
 .galeria{
-
     width: 98%;
     height: auto;
     margin:  50px auto;
-    padding: 10px 20px;
-    
+    padding: 10px 20px;    
     grid-area: galeria;
     img{
         border-top-left-radius: 5px;
 	    border-top-right-radius: 5px;
 	    width: 100%;
         margin: 10px;
-
     }
-}
-
-.acordion p{   
-       background-color: $mainColor;   
 }
 //termina index
 
@@ -92,10 +57,7 @@
 //mobile fisrt-nav y botonera idem-
 
 .contenedor2{
-    display: grid;
-    overflow: hidden;
-    grid-template-columns: 100vw;
-    grid-template-rows: auto;
+    @include grid(hidden,100vw,auto);
     grid-template-areas:
     "nav" 
     "header" 
@@ -109,29 +71,23 @@
     "presupuesto" 
     "pie";
 }
-
 .panelSolar{
     grid-area: panel;
 }
-
 .diferenciasGrid{
     grid-area: texto;
 }
 .video1{
     grid-area: video1;
-
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-    
+    padding-top: 20px;   
 }
 .fotosPanel{
-    grid-area: fotosP;
-    
+    grid-area: fotosP;   
     padding: 10px ;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @include flex(column, center,center);
+    
 }
 .productosPanel{
     grid-area: productosP;
@@ -145,34 +101,14 @@
     margin: 10px;
 }
 
-.box{
-    width: 95%;
-    height: auto;
-    margin: 20px auto;
-    padding: 20px 20px;
-    border: solid $secondaryColor 2px;
-    overflow-y: auto;  
-}
-.box2{
-    width: 98%;
-    height: auto;
-    margin: 2px auto;
-    padding: 2px 2px;
-    border: solid $secondaryColor 2px;
-    overflow-y: auto;  
-}
 //temina paneles solares
 
 //termotanques-inicio
 /*termotanques*/
 //termotanques mobile first -nav y pie idem-
 
-
 .contenedor3{
-    display: grid;
-    overflow: hidden;
-    grid-template-columns: 100vw;
-    grid-template-rows: auto;
+    @include grid(hidden,100vw,auto);
     grid-template-areas: 
     "nav" 
     "header" 
@@ -183,23 +119,18 @@
     "presupuesto"
     "pie";
 }
-
 .termo{
     grid-area: tituloT;
 }
 .videoTermo{
     grid-area: video2;
-
-    display: flex;
-    justify-content: center;
+    @include flex(row,center,center);
     padding-top: 20px;
 }
 .caracteristicaTermo{
-
     grid-area: textoT
 }
 .datosUtilesTermo{
-
     grid-area: datosT;
     margin-top: 20px;
 }
@@ -211,10 +142,7 @@
 /* Baterias de litio*/
 
 .contenedor4{
-    display: grid;
-    overflow: hidden;
-    grid-template-columns: 100vw;
-    grid-template-rows: auto;
+    @include grid(hidden,100vw,auto);
     grid-template-areas: 
     "nav" 
     "header" 
@@ -229,9 +157,7 @@
     "pB"
     "presupuesto" 
     "pie";
-    
 }
-
 .bateriaLitio{
     grid-area: bateria;
 }
@@ -242,8 +168,7 @@
     grid-area: textoB;
 }
 .imagenLitioBox{
-    grid-area: fotoB;
-    
+    grid-area: fotoB;    
 }
 .monitoriable{
     grid-area: b1;
@@ -256,21 +181,15 @@
 }
 .productosBateriaTitulo{
     grid-area: productoB;
-
     padding: 20px;   
 }
 .productosB{
     grid-area: pB;
-
     margin: 10px;
 }
-
 .presupuesto{
     grid-area: presupuesto;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row,center,center);
     margin: 20px auto;
     padding: 20px 20px;
 }
@@ -282,10 +201,8 @@
 /*Contacto*/
 
 .contenedor5{
-    display: grid;
-    overflow: hidden;
+    @include grid-gral(hidden,auto);
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: auto;
     grid-template-areas:
     "nav nav" 
     "tituloC tituloC" 
@@ -295,57 +212,34 @@
     "mapa mapa" 
     "pie pie";
 }
-
 .contactoTitulo{
     grid-area: tituloC;
 }
 .informacionDeContacto{
     grid-area: info;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    @include flex(column,center,center); 
 }
 .mapaLocalizacion{
     grid-area: mapa;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    @include flex(row,center,center);
 }
 .losMejoresBeneficios{
     grid-area: beneficios;
-
 }
-
 .logosA{
     grid-area: A;
-
 }
-
 .logosB{
-    grid-area: B;
-  
+    grid-area: B; 
 }
     //estructura
-
-
 .logos1,.logos2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;   
+    @include flex(column,center,center);  
 }
-       
-
 form{
     display: flex;
     flex-direction: column;
 }
-
-
 figure{
     margin: 20px;
 }

@@ -1,16 +1,35 @@
 //box general
 .box-gral{
-    padding: 30px 50px;
-    border: solid 2px $secondaryColor;
-    display: flex;
-    justify-content: center;
-    align-self: flex-start;
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 20px;
+    border: solid $secondaryColor 2px;
+    overflow-y: auto; 
 }
-.box-gray{
+.box-green{
     @extend .box-gral;
     background-color: $mainColor;  
 }
-
+.box-white{
+    @extend .box-gral;
+    background-color: $keyColor;
+}
+.box2{
+    width: 98%;
+    height: auto;
+    margin: 2px auto;
+    padding: 2px 2px;
+    border: solid $secondaryColor 2px;
+    overflow-y: auto; 
+}
+.box3{
+    width: 90%;
+    height: auto;
+    margin:  50px auto;
+    padding: 40px 20px;
+    overflow-y: auto;
+}
 //textos
 //@include textos(2em,2.2em ,black)
 @mixin textos ($size,$interlineado,$color){
@@ -21,13 +40,34 @@
     padding: 10px;
     font-family: $mainFont; 
 }
-
 //flex
-// @include flex(row, center,flex-end ,nowrap )
-@mixin flex ($dire,$justify,$align,$wrap){
+// @include flex(row, center,flex-end ,nowrap);
+@mixin flex-gral ($dire,$justify,$align,$wrap){
     display: flex;
     flex-direction: $dire;
     justify-content: $justify;
     align-items: $align;
     flex-wrap: $wrap;
 }
+@mixin flex ($dire,$justify,$align){
+    display: flex;
+    flex-direction: $dire;
+    justify-content: $justify;
+    align-items: $align;
+}
+// @include flex(row,center,flex-end);
+//grid
+@mixin grid-gral($overflow,$row){
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: auto;
+}
+//@include grid-gral(hidden,auto);
+@mixin grid ($overflow,$columns,$row,){
+    display:grid;
+    overflow: hidden;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+}
+//@include grid(hidden,100vw,auto);
+
