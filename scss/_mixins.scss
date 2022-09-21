@@ -31,14 +31,13 @@
     overflow-y: auto;
 }
 //textos
-//@include textos(2em,2.2em ,black)
-@mixin textos ($size,$interlineado,$color){
+//@include textos(2em,2.2em ,black,400);
+@mixin textos ($size,$interlineado,$color,$peso,){
     font-size: $size;
     line-height: $interlineado;
     color: $color;
-    margin: 10px 20px;
-    padding: 10px;
-    font-family: $mainFont; 
+    font-weight: $peso;
+    font-family: 'Roboto', sans-serif;   
 }
 //flex
 // @include flex(row, center,flex-end ,nowrap);

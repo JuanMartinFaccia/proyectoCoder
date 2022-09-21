@@ -31,39 +31,29 @@ h1,h2,h3,h4,h5{
     font-family:$mainfont;
 }
 .textCenter{
-    text-align: center;
-    
+    text-align: center;  
 }
 //index
 .skyenergy__titulo--xxl{
-    font-size: $tituloLg;
-    
+    font-size: $tituloLg;   
 }
 .skyenergy__titulos--xl{
-    font-size: $tituloMd;
-    
+    font-size: $tituloMd;   
 }
 .carrusel__titulo--md{
-    font-size: $tituloSm;
-    
+    font-size: $tituloSm;   
 }
 .skyenergy__text--md{
-    color:$textColor;
-    font-family: $mainfont;
-    font-size: $textSm;
-    line-height: $lineHeight;
-    font-weight: $textRegular;
+    @include textos($textSm,$lineHeight,$textColor,$textRegular);
+   
 }
 .acordion p{   
     background-color: $mainColor;   
 }
 //text table
 
-th,td{   
-    font-family: $mainfont;
-    font-size: $textTable;
-    line-height: $lineHeightTable;
-    font-weight: $textRegular
+th,td{ 
+    @include textos($textTable,$lineHeightTable,$textColor,$textRegular); 
 }
 //titulos tamaño de texto
 
@@ -79,18 +69,10 @@ th,td{
 }
 //texto p
 .carrusel__text--md{
-    color:$mainColor;
-    font-family: $mainfont;
-    font-size: $textSm;
-    line-height: $lineHeight;
-    font-weight: $textRegular;
+    @include textos($textSm,$lineHeight,$mainColor,$textRegular);
 }
 .text--md{
-    color:$textColor;
-    font-family: $mainfont;
-    font-size: $textSm;
-    line-height: $lineHeight;
-    font-weight: $textRegular;
+    @include textos($textSm,$lineHeight,$textColor,$textRegular);
 }
 //P baterias
 
@@ -102,20 +84,12 @@ th,td{
 //texto contacto
 
 label,input{
-    color:$textColor;
-    font-family: $mainfont;
-    font-size: $textSm;
-    line-height: $lineHeight;
-    font-weight: $textRegular;
+    @include textos($textSm,$lineHeight,$textColor,$textRegular);    
 }
 
 .logos1 figure figcaption,
 .logos2 figure figcaption{
-    color:$textColor;
-    font-family: $mainfont;
-    font-size: $textSm;
-    line-height: $lineHeight;
-    font-weight: $textThin;
+    @include textos($textSm,$lineHeight,$textColor,$textThin);   
     text-align: center;
     padding: 10px auto;
 }

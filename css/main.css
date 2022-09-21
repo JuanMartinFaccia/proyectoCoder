@@ -30,100 +30,6 @@ td {
   color: rgb(93, 103, 112);
 }
 
-h1, h2, h3, h4, h5 {
-  color: black;
-  font-family: "Roboto", sans-serif;
-}
-
-.textCenter {
-  text-align: center;
-}
-
-.skyenergy__titulo--xxl {
-  font-size: 4rem;
-}
-
-.skyenergy__titulos--xl {
-  font-size: 3rem;
-}
-
-.carrusel__titulo--md {
-  font-size: 2.5em;
-}
-
-.skyenergy__text--md {
-  color: rgb(93, 103, 112);
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 2.2;
-  font-weight: 400;
-}
-
-.acordion p {
-  background-color: rgb(135, 231, 158);
-}
-
-th, td {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
-  line-height: 2;
-  font-weight: 400;
-}
-
-.titulo--xxl {
-  font-size: 4rem;
-}
-
-.titulos--xl {
-  font-size: 3rem;
-}
-
-.titulo--md {
-  font-size: 2.5em;
-  padding: 10px;
-}
-
-.carrusel__text--md {
-  color: rgb(135, 231, 158);
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 2.2;
-  font-weight: 400;
-}
-
-.text--md {
-  color: rgb(93, 103, 112);
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 2.2;
-  font-weight: 400;
-}
-
-.monitoriable p,
-.modulares p,
-.silenciosas p {
-  color: rgb(135, 231, 158);
-}
-
-label, input {
-  color: rgb(93, 103, 112);
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 2.2;
-  font-weight: 400;
-}
-
-.logos1 figure figcaption,
-.logos2 figure figcaption {
-  color: rgb(93, 103, 112);
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  line-height: 2.2;
-  font-weight: 200;
-  text-align: center;
-  padding: 10px auto;
-}
-
 .box-gral, .skyenergy__articulo, .box-white, .box-green {
   width: 95%;
   height: auto;
@@ -156,6 +62,101 @@ label, input {
   margin: 50px auto;
   padding: 40px 20px;
   overflow-y: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.skyenergy__titulo--xxl {
+  font-size: 4rem;
+}
+
+.skyenergy__titulos--xl {
+  font-size: 3rem;
+}
+
+.carrusel__titulo--md {
+  font-size: 2.5em;
+}
+
+.skyenergy__text--md {
+  font-size: 2rem;
+  line-height: 2.2;
+  color: rgb(93, 103, 112);
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.acordion p {
+  background-color: rgb(135, 231, 158);
+}
+
+th, td {
+  font-size: 1.8rem;
+  line-height: 2;
+  color: rgb(93, 103, 112);
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.titulo--xxl {
+  font-size: 4rem;
+}
+
+.titulos--xl {
+  font-size: 3rem;
+}
+
+.titulo--md {
+  font-size: 2.5em;
+  padding: 10px;
+}
+
+.carrusel__text--md {
+  font-size: 2rem;
+  line-height: 2.2;
+  color: rgb(135, 231, 158);
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.text--md {
+  font-size: 2rem;
+  line-height: 2.2;
+  color: rgb(93, 103, 112);
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.monitoriable p,
+.modulares p,
+.silenciosas p {
+  color: rgb(135, 231, 158);
+}
+
+label, input {
+  font-size: 2rem;
+  line-height: 2.2;
+  color: rgb(93, 103, 112);
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.logos1 figure figcaption,
+.logos2 figure figcaption {
+  font-size: 2rem;
+  line-height: 2.2;
+  color: rgb(93, 103, 112);
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 10px auto;
 }
 
 /*animaciones y degrades*/
