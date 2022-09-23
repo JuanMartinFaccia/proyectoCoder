@@ -1,8 +1,9 @@
 //index
 /*index*/
 //index-mobile first
+
 .contenedor{
-    @include grid(hidden,100vw,auto);
+     @include grid(hidden,100vw,auto);
     grid-template-areas: 
     "nav" 
     "header"  

@@ -22,6 +22,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   background-image: url(../Imagenes/bubble2.png);
   background-repeat: repeat;
 }
