@@ -1,5 +1,5 @@
 //box general
-.box-gral{
+.box{
     width: 95%;
     height: auto;
     margin: 20px auto;
@@ -8,11 +8,11 @@
     overflow-y: auto; 
 }
 .box-green{
-    @extend .box-gral;
+    @extend .box;
     background-color: $mainColor;  
 }
 .box-white{
-    @extend .box-gral;
+    @extend .box;
     background-color: $keyColor;
 }
 .box2{
