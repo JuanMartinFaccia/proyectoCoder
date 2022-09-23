@@ -204,14 +204,6 @@ label, input {
 }
 
 /*index*/
-.contenedor {
-  display: grid;
-  overflow: hidden;
-  grid-template-columns: 100vw;
-  grid-template-rows: auto;
-  grid-template-areas: "nav" "header" "area1" "galeria" "area2" "area3" "area4" "pie";
-}
-
 .encabezado__img--fluid {
   width: 100%;
 }
@@ -251,14 +243,6 @@ label, input {
 }
 
 /*paneles solares*/
-.contenedor2 {
-  display: grid;
-  overflow: hidden;
-  grid-template-columns: 100vw;
-  grid-template-rows: auto;
-  grid-template-areas: "nav" "header" "panel" "texto" "video1" "fotosP" "productosP" "p1" "p2" "presupuesto" "pie";
-}
-
 .panelSolar {
   grid-area: panel;
 }
@@ -298,14 +282,6 @@ label, input {
 }
 
 /*termotanques*/
-.contenedor3 {
-  display: grid;
-  overflow: hidden;
-  grid-template-columns: 100vw;
-  grid-template-rows: auto;
-  grid-template-areas: "nav" "header" "tituloT" "video2" "textoT" "datosT" "presupuesto" "pie";
-}
-
 .termo {
   grid-area: tituloT;
 }
@@ -329,14 +305,6 @@ label, input {
 }
 
 /* Baterias de litio*/
-.contenedor4 {
-  display: grid;
-  overflow: hidden;
-  grid-template-columns: 100vw;
-  grid-template-rows: auto;
-  grid-template-areas: "nav" "header" "bateria" "fotoB" "tituloB" "textoB" "b1" "b2" "b3" "productoB" "pB" "presupuesto" "pie";
-}
-
 .bateriaLitio {
   grid-area: bateria;
 }
@@ -386,14 +354,6 @@ label, input {
 }
 
 /*Contacto*/
-.contenedor5 {
-  display: grid;
-  overflow: hidden;
-  grid-template-rows: auto;
-  grid-template-columns: 50vw 50vw;
-  grid-template-areas: "nav nav" "tituloC tituloC" "beneficios beneficios" "A B" "info info" "mapa mapa" "pie pie";
-}
-
 .contactoTitulo {
   grid-area: tituloC;
 }
@@ -460,6 +420,43 @@ figure {
   width: 60px;
 }
 
+@media (min-width: 480px) {
+  .contenedor {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "header" "area1" "galeria" "area2" "area3" "area4" "pie";
+  }
+  .contenedor2 {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "header" "panel" "texto" "video1" "fotosP" "productosP" "p1" "p2" "presupuesto" "pie";
+  }
+  .contenedor3 {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "header" "tituloT" "video2" "textoT" "datosT" "presupuesto" "pie";
+  }
+  .contenedor4 {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "header" "bateria" "fotoB" "tituloB" "textoB" "b1" "b2" "b3" "productoB" "pB" "presupuesto" "pie";
+  }
+  .contenedor5 {
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: auto;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas: "nav nav" "tituloC tituloC" "beneficios beneficios" "A B" "info info" "mapa mapa" "pie pie";
+  }
+}
 @media (min-width: 1024px) {
   .contenedor {
     grid-template-columns: 25vw 50vw 25vw;

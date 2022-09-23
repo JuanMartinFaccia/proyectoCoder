@@ -2,18 +2,7 @@
 /*index*/
 //index-mobile first
 
-.contenedor{
-     @include grid(hidden,100vw,auto);
-    grid-template-areas: 
-    "nav" 
-    "header"  
-    "area1"  
-    "galeria" 
-    "area2"
-    "area3" 
-    "area4" 
-    "pie";
-}
+
 .encabezado__img--fluid{
     width: 100%;
 }
@@ -60,21 +49,7 @@
 /*paneles solares*/
 //mobile fisrt-nav y botonera idem-
 
-.contenedor2{
-    @include grid(hidden,100vw,auto);
-    grid-template-areas:
-    "nav" 
-    "header" 
-    "panel" 
-    "texto" 
-    "video1" 
-    "fotosP" 
-    "productosP" 
-    "p1"  
-    "p2"
-    "presupuesto" 
-    "pie";
-}
+
 .panelSolar{
     grid-area: panel;
 }
@@ -111,18 +86,7 @@
 /*termotanques*/
 //termotanques mobile first -nav y pie idem-
 
-.contenedor3{
-    @include grid(hidden,100vw,auto);
-    grid-template-areas: 
-    "nav" 
-    "header" 
-    "tituloT" 
-    "video2" 
-    "textoT"
-    "datosT" 
-    "presupuesto"
-    "pie";
-}
+
 .termo{
     grid-area: tituloT;
 }
@@ -145,23 +109,7 @@
 
 /* Baterias de litio*/
 
-.contenedor4{
-    @include grid(hidden,100vw,auto);
-    grid-template-areas: 
-    "nav" 
-    "header" 
-    "bateria" 
-    "fotoB" 
-    "tituloB" 
-    "textoB" 
-    "b1" 
-    "b2" 
-    "b3" 
-    "productoB" 
-    "pB"
-    "presupuesto" 
-    "pie";
-}
+
 .bateriaLitio{
     grid-area: bateria;
 }
@@ -204,18 +152,7 @@
 
 /*Contacto*/
 
-.contenedor5{
-    @include grid-gral(hidden,auto);
-    grid-template-columns: 50vw 50vw;
-    grid-template-areas:
-    "nav nav" 
-    "tituloC tituloC" 
-    "beneficios beneficios"
-    "A B"
-    "info info" 
-    "mapa mapa" 
-    "pie pie";
-}
+
 .contactoTitulo{
     grid-area: tituloC;
 }
