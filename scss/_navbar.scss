@@ -18,7 +18,8 @@
                 color:$secondaryColor;
                 text-decoration: none;
                 font-family:$mainfont ;
-                font-size: $textSm; 
+                font-size: $textSm;
+                font-weight:$textBold;
                  &:hover{
                     text-decoration: underline;
                     

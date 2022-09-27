@@ -12,6 +12,7 @@ $tituloMd:3rem;
 $tituloSm:2.5rem;
 
 $textSm:2rem;
+$textXsm:1.5rem;
 $textTable:1.8rem;
 
 //weights(pesos)
@@ -52,9 +53,13 @@ h1,h2,h3,h4,h5{
 }
 //text table
 
-th,td{ 
+th{
+    @include textos($textTable,$lineHeightTable,$secondaryColor,$textBold);
+}
+td{ 
     @include textos($textTable,$lineHeightTable,$textColor,$textRegular); 
 }
+
 //titulos tamaño de texto
 
 .titulo--xxl{
@@ -73,6 +78,9 @@ th,td{
 }
 .text--md{
     @include textos($textSm,$lineHeight,$textColor,$textRegular);
+}
+.text--xsm{
+    @include textos($textTable,$lineHeight,$mainColor,$textRegular);
 }
 //P baterias
 
