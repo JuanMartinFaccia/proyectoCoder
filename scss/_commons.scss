@@ -5,7 +5,23 @@ $mainColorTranslucido:rgba(135, 231, 158, 0.7);
 $secondaryColor:black;
 $textColor:rgba(93, 103, 112, 1);
 $keyColor:white;
+//MAPS
 
+$paleta:(
+   'uno': rgba(135, 231, 158, 1),
+   'dos': rgba(113, 188, 120, 1),
+   'tres':rgba(63, 216, 170, 1),
+   'cuatro':rgba(64, 197, 117, 1),
+   'cinco':rgba(73, 182, 117, 1),
+   'seis':rgba(0, 158, 96, 1),
+   'siete':rgba(46, 139, 87, 1),
+   'ocho':rgba(255, 255, 255, 1),
+   'nueve':rgba(250, 251, 253, 1),
+   'diez':rgba(52,	52,	52, 1),
+   'once':rgba(31,	27,	28, 1),
+   'doce':rgba(255, 246, 0, 1),
+   'trece':rgba(234, 190, 63, 1),
+);
 //Backgrouns
 
 .bgWaterGreen{
@@ -14,10 +30,8 @@ $keyColor:white;
 .bgSlateGray{
     background-color:$textColor;
 }
-
 .bgWhight{
     background-color:$keyColor;
-
 }
 //
 
@@ -34,16 +48,16 @@ body{
     background-image: url(../Imagenes/bubble2.png);
     background-repeat: repeat;
 }
-
 //color table text
 
 th{
     color: $secondaryColor;
   }
-  td{
+td{
     color: $textColor;
-  }
+}
 //Boxs Shadows
+
 $mainBoxShadow:rgba(0, 0, 0, 0.35) 0px 5px 15px; 
 $secondaryBoxShadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 
