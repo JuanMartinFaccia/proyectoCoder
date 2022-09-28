@@ -429,6 +429,18 @@ figure {
   margin: 20px;
 }
 
+.error {
+  grid-area: error;
+}
+
+.foto404 {
+  grid-area: fotoE;
+}
+
+.botonError {
+  grid-area: botonE;
+}
+
 .pie {
   text-align: center;
   padding: 6px 20px;
