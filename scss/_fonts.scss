@@ -1,9 +1,11 @@
 //google fonts
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 //nombro fonts
 
 $mainfont:'Roboto', sans-serif;
+$secondaryFont:'Lobster', cursive,sans-serif;
 
 //tamaño de texto
 
@@ -100,4 +102,18 @@ label,input{
     @include textos($textSm,$lineHeight,$textColor,$textThin);   
     text-align: center;
     padding: 10px auto;
+}
+//error 404
+.errorTitulo{
+    color:aqua;
+    font-family: $secondaryFont;
+    padding: 10px;
+}
+.btnError{
+    color:aqua;
+    font-family: $secondaryFont;
+    font-size: $tituloSm;
+    
+    padding: 10px;
+
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 .bgWaterGreen {
   background-color: rgb(135, 231, 158);
 }
@@ -187,6 +188,19 @@ label, input {
   font-family: "Roboto", sans-serif;
   text-align: center;
   padding: 10px auto;
+}
+
+.errorTitulo {
+  color: aqua;
+  font-family: "Lobster", cursive, sans-serif;
+  padding: 10px;
+}
+
+.btnError {
+  color: aqua;
+  font-family: "Lobster", cursive, sans-serif;
+  font-size: 2.5rem;
+  padding: 10px;
 }
 
 /*animaciones y degrades*/
@@ -431,14 +445,26 @@ figure {
 
 .error {
   grid-area: error;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .foto404 {
   grid-area: fotoE;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .botonError {
   grid-area: botonE;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .pie {
@@ -495,6 +521,13 @@ figure {
     grid-template-columns: 50vw 50vw;
     grid-template-areas: "nav nav" "tituloC tituloC" "beneficios beneficios" "A B" "info info" "mapa mapa" "pie pie";
   }
+  .contenedor6 {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: "error" "fotoE" "botonE";
+  }
 }
 @media (min-width: 1024px) {
   .contenedor {
@@ -521,6 +554,24 @@ figure {
     flex-direction: row;
   }
   .losMejoresBeneficios {
+    margin-top: 50px;
+  }
+  .contenedor6 {
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas: "error fotoE" "botonE botonE";
+  }
+  .error {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: none;
+    margin-top: 50px;
+  }
+  .foto404 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: none;
     margin-top: 50px;
   }
 }

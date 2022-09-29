@@ -68,6 +68,13 @@
        "mapa mapa" 
        "pie pie";
    }
+   .contenedor6{
+        @include grid(hidden,100vw,auto);
+        grid-template-areas:
+        "error" 
+        "fotoE" 
+        "botonE";
+   }
 }
 
 @media (min-width: 1024px){
@@ -139,5 +146,18 @@
         margin-top: 50px;
 
     }
-
+    .contenedor6{
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas:
+        "error fotoE"
+        "botonE botonE" ;
+    }
+    .error{
+        @include flex(row,end,none);
+        margin-top: 50px
+    }
+    .foto404{
+        @include flex(row,start,none);
+        margin-top: 50px;
+    }
 }

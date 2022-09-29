@@ -192,10 +192,13 @@ figure{
 
 .error{
     grid-area: error;
+    @include flex(row,center,center);
 }
 .foto404{
     grid-area: fotoE;
+    @include flex(row,center,center);
 }
 .botonError{
-    grid-area: botonE;
+    grid-area: botonE;  
+    @include flex(row,center,center);
 }
