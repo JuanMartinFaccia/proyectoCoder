@@ -48,10 +48,11 @@ h1,h2,h3,h4,h5{
 }
 .skyenergy__text--md{
     @include textos($textSm,$lineHeight,$textColor,$textRegular);
-   
+    text-indent:15px;
 }
 .acordion p{   
-    background-color: $mainColor;   
+    background-color: $mainColor;
+      
 }
 //text table
 
@@ -75,14 +76,17 @@ td{
     padding: 10px;    
 }
 //texto p
-.carrusel__text--md{
+.accordion__text--md{
     @include textos($textSm,$lineHeight,$mainColor,$textRegular);
+    text-indent:15px;
 }
 .text--md{
     @include textos($textSm,$lineHeight,$textColor,$textRegular);
+    text-indent:15px;
 }
 .text--xsm{
     @include textos($textTable,$lineHeight,$mainColor,$textRegular);
+    text-indent:15px;
 }
 //P baterias
 

@@ -102,19 +102,30 @@
         "p1 p1 p2 p2"
         "presupuesto presupuesto presupuesto presupuesto"
         "pie pie pie pie";
-    }    
-     
+    }
+    .fotosPanel {
+         margin-bottom: 140px;
+         margin-right: 20px;
+    }
+    .productoP2{
+        margin-right: 30px;
+    }
     .contenedor3{
-        grid-template-columns: 35vw 45vw 20vw;
+        grid-template-columns: 30vw 40vw 30vw;
         grid-template-areas: 
         "nav nav nav" 
         "header header header" 
         "tituloT tituloT tituloT" 
         "textoT video2 datosT" 
-        "presupuesto presupuesto presupuesto"
+        "textoT presupuesto datosT"
         "pie pie pie";
     }
-
+    .termo{
+        margin-right: 20px;
+    }
+    .videoTermo{
+        align-items: flex-start;
+    }
     .contenedor4{
         grid-template-columns: 30vw 30vw 40vw;
         grid-template-areas: 
@@ -128,7 +139,19 @@
         "presupuesto presupuesto presupuesto"
         "pie pie pie";
     }
-
+    .bateriaLitio{
+        margin-right: 20px;
+    }
+    .funcionamientoTitulo {
+        display: flex;
+        align-items: center;
+    }
+    .imagenLitioBox{
+        margin-right: 30px;
+    }
+    .productosB{
+        margin-right: 30px;
+    }
     .contenedor5{
         grid-template-columns: 50vw 50vw;
         grid-template-areas: 
@@ -153,11 +176,11 @@
         "botonE botonE" ;
     }
     .error{
-        @include flex(row,end,none);
+        justify-content: flex-end;
         margin-top: 50px
     }
     .foto404{
-        @include flex(row,start,none);
+       justify-content: flex-start;
         margin-top: 50px;
     }
 }
