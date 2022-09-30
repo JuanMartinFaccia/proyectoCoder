@@ -200,7 +200,6 @@ label, input {
   color: aqua;
   font-family: "Lobster", cursive, sans-serif;
   font-size: 2.5rem;
-  text-decoration: none;
   padding: 10px;
 }
 
@@ -448,7 +447,7 @@ figure {
   grid-area: error;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
@@ -456,7 +455,7 @@ figure {
   grid-area: fotoE;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 
@@ -466,6 +465,9 @@ figure {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.botonError a {
+  text-decoration: none;
 }
 
 .pie {
