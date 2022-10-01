@@ -27,6 +27,7 @@ $textThin:200;
 
 $lineHeight:2.2;
 $lineHeightTable:2;
+$lineHeightSm:1.8;
 
 //
 h1,h2,h3,h4,h5{
@@ -50,10 +51,7 @@ h1,h2,h3,h4,h5{
     @include textos($textSm,$lineHeight,$textColor,$textRegular);
     text-indent:15px;
 }
-.acordion p{   
-    background-color: $mainColor;
-      
-}
+
 //text table
 
 th{
@@ -77,7 +75,7 @@ td{
 }
 //texto p
 .accordion__text--md{
-    @include textos($textSm,$lineHeight,$mainColor,$textRegular);
+    @include textos($textSm,$lineHeightSm,$mainColor,$textRegular);
     text-indent:15px;
 }
 .text--md{
