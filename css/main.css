@@ -9,7 +9,7 @@
 }
 
 .bgWhight {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 * {
@@ -33,7 +33,7 @@ body {
 }
 
 th {
-  color: black;
+  color: rgb(31, 27, 28);
 }
 
 td {
@@ -45,7 +45,6 @@ td {
   height: auto;
   margin: 20px auto;
   padding: 20px 20px;
-  border: solid black 1px;
   border-radius: 3px;
   overflow-y: auto;
 }
@@ -53,16 +52,19 @@ td {
 .box-green, .skyenergy__articulo {
   background-color: rgb(135, 231, 158);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: solid rgb(234, 190, 63) 2px;
 }
 
 .box-white {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: solid rgb(135, 231, 158) 2px;
 }
 
 .box-table {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border: solid rgb(31, 27, 28) 1px;
 }
 
 .box2 {
@@ -70,7 +72,7 @@ td {
   height: auto;
   margin: 2px auto;
   padding: 2px 2px;
-  border: solid black 2px;
+  border: solid rgb(31, 27, 28) 2px;
   overflow-y: auto;
 }
 
@@ -84,8 +86,9 @@ td {
 }
 
 h1, h2, h3, h4, h5 {
-  color: black;
+  color: rgb(31, 27, 28);
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 
 .textCenter {
@@ -116,7 +119,7 @@ h1, h2, h3, h4, h5 {
 th {
   font-size: 1.8rem;
   line-height: 2;
-  color: black;
+  color: rgb(31, 27, 28);
   font-weight: 600;
   font-family: "Roboto", sans-serif;
 }
@@ -169,6 +172,15 @@ td {
   text-indent: 15px;
 }
 
+.datosUtilesTermo__text-xsm {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: rgb(135, 231, 158);
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-indent: 15px;
+}
+
 .monitoriable p,
 .modulares p,
 .silenciosas p {
@@ -195,13 +207,13 @@ label, input {
 }
 
 .errorTitulo {
-  color: aqua;
+  color: rgb(0, 225, 225);
   font-family: "Lobster", cursive, sans-serif;
   padding: 10px;
 }
 
 .btnError {
-  color: aqua;
+  color: rgb(0, 225, 225);
   font-family: "Lobster", cursive, sans-serif;
   font-size: 2.5rem;
   padding: 10px;
@@ -209,7 +221,7 @@ label, input {
 
 /*animaciones y degrades*/
 .degrade {
-  background: linear-gradient(to right, white, rgb(135, 231, 158));
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(135, 231, 158));
 }
 
 .scale:hover {
@@ -237,7 +249,7 @@ label, input {
   margin-right: 20px;
 }
 .botonera ul li a {
-  color: black;
+  color: rgb(31, 27, 28);
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
@@ -549,7 +561,7 @@ figure {
     margin-right: 30px;
   }
   .contenedor3 {
-    grid-template-columns: 30vw 40vw 30vw;
+    grid-template-columns: 35vw 45vw 20vw;
     grid-template-areas: "nav nav nav" "header header header" "tituloT tituloT tituloT" "textoT video2 datosT" "textoT presupuesto datosT" "pie pie pie";
   }
   .termo {

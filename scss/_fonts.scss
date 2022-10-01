@@ -33,6 +33,7 @@ $lineHeightSm:1.8;
 h1,h2,h3,h4,h5{
     color:$secondaryColor;
     font-family:$mainfont;
+    font-weight:$textBold;
 }
 .textCenter{
     text-align: center;  
@@ -86,6 +87,12 @@ td{
     @include textos($textTable,$lineHeight,$mainColor,$textRegular);
     text-indent:15px;
 }
+//p aside termotanques
+.datosUtilesTermo__text-xsm{
+    @include textos($textTable,$lineHeightSm,$mainColor,$textRegular);
+    text-indent:15px;
+} 
+
 //P baterias
 
 .monitoriable p,
@@ -107,12 +114,12 @@ label,input{
 }
 //error 404
 .errorTitulo{
-    color:aqua;
+    color:map-get($map:$paleta, $key:'catorce');
     font-family: $secondaryFont;
     padding: 10px;
 }
 .btnError{
-    color:aqua;
+    color:map-get($map:$paleta, $key:'catorce');
     font-family: $secondaryFont;
     font-size: $tituloSm;
       

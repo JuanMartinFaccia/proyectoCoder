@@ -2,9 +2,9 @@
 
 $mainColor:rgba(135, 231, 158, 1);
 $mainColorTranslucido:rgba(135, 231, 158, 0.7);
-$secondaryColor:black;
+$secondaryColor:rgba(31,	27,	28, 1);
 $textColor:rgba(93, 103, 112, 1);
-$keyColor:white;
+$keyColor:rgba(255, 255, 255, 1);
 //MAPS
 
 $paleta:(
@@ -21,6 +21,8 @@ $paleta:(
    'once':rgba(31,	27,	28, 1),
    'doce':rgba(255, 246, 0, 1),
    'trece':rgba(234, 190, 63, 1),
+   'catorce':rgba(0, 225, 225, 1),
+   'quince':rgba(0, 170, 228, 1),
 );
 //map-get($map:$paleta, $key:'dos');
 //Backgrouns

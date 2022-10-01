@@ -4,7 +4,7 @@
     height: auto;
     margin: 20px auto;
     padding: 20px 20px;
-    border: solid $secondaryColor 1px;
+    
     border-radius: 3px;
     overflow-y: auto; 
 }
@@ -12,16 +12,19 @@
     @extend .box;
     background-color: $mainColor;
     box-shadow: $mainBoxShadow;
+    border: solid map-get($map:$paleta, $key:'trece') 2px;
 }
 .box-white{
     @extend .box;
     background-color: $keyColor;
     box-shadow: $mainBoxShadow;
+    border: solid $mainColor 2px;
 }
 .box-table{
     @extend .box;
     background-color: $keyColor;
     box-shadow: $secondaryBoxShadow;
+    border: solid $secondaryColor 1px;
 }
 .box2{
     width: 98%;
