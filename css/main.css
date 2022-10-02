@@ -361,6 +361,16 @@ label, input {
   padding: 10px 10px;
 }
 
+.presupuestoTermotanque {
+  grid-area: presupuestoT;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px 20px;
+}
+
 /* Baterias de litio*/
 .bateriaLitio {
   grid-area: bateria;
@@ -520,7 +530,7 @@ figure {
     overflow: hidden;
     grid-template-columns: 100vw;
     grid-template-rows: auto;
-    grid-template-areas: "nav" "header" "tituloT" "video2" "textoT" "datosT" "presupuesto" "pie";
+    grid-template-areas: "nav" "header" "tituloT" "video2" "textoT" "datosT" "presupuestoT" "pie";
   }
   .contenedor4 {
     display: grid;
@@ -562,7 +572,7 @@ figure {
   }
   .contenedor3 {
     grid-template-columns: 35vw 45vw 20vw;
-    grid-template-areas: "nav nav nav" "header header header" "tituloT tituloT tituloT" "textoT video2 datosT" "textoT presupuesto datosT" "pie pie pie";
+    grid-template-areas: "nav nav nav" "header header header" "tituloT tituloT tituloT" "textoT video2 datosT" "textoT presupuestoT datosT" "pie pie pie";
   }
   .termo {
     margin-right: 20px;

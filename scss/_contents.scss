@@ -64,9 +64,8 @@
 }
 .fotosPanel{
     grid-area: fotosP;   
-    padding: 10px ;
-    @include flex(column, center,center);
-    
+    padding: 10px;
+    @include flex(column, center,center);  
 }
 .productosPanel{
     grid-area: productosP;
@@ -103,6 +102,13 @@
     margin: 10px;
     padding: 10px 10px;   
 }
+.presupuestoTermotanque{
+    grid-area: presupuestoT;
+    @include flex(row,center,center);
+    margin: 20px auto;
+    padding: 20px 20px;
+}
+
 //termotanques-fin
 
 //Batertias de litio -inicio-
