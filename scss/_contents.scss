@@ -104,11 +104,14 @@
 }
 .presupuestoTermotanque{
     grid-area: presupuestoT;
+    
+}
+.presupuestoLogo{
     @include flex(row,center,center);
     margin: 20px auto;
     padding: 20px 20px;
-}
 
+}
 //termotanques-fin
 
 //Batertias de litio -inicio-

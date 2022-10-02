@@ -363,6 +363,9 @@ label, input {
 
 .presupuestoTermotanque {
   grid-area: presupuestoT;
+}
+
+.presupuestoLogo {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -573,6 +576,10 @@ figure {
   .contenedor3 {
     grid-template-columns: 35vw 45vw 20vw;
     grid-template-areas: "nav nav nav" "header header header" "tituloT tituloT tituloT" "textoT video2 datosT" "textoT presupuestoT datosT" "pie pie pie";
+  }
+  .presupuestoLogo {
+    justify-content: space-between;
+    margin-left: 90px;
   }
   .termo {
     margin-right: 20px;
