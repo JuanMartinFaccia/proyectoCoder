@@ -162,8 +162,11 @@
         "A B"
         "pie pie";
     }
-    .logos1,.logos2{   
+    .logosA,.logosB{ 
+        display: flex;  
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     .losMejoresBeneficios{
         margin-top: 50px;

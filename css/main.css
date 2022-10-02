@@ -195,8 +195,8 @@ label, input {
   font-family: "Roboto", sans-serif;
 }
 
-.logos1 figure figcaption,
-.logos2 figure figcaption {
+.logosB figure figcaption,
+.logosA figure figcaption {
   font-size: 2rem;
   line-height: 2.2;
   color: rgb(93, 103, 112);
@@ -601,8 +601,11 @@ figure {
     grid-template-columns: 50vw 50vw;
     grid-template-areas: "nav nav" "tituloC tituloC" "info mapa" "beneficios beneficios" "A B" "pie pie";
   }
-  .logos1, .logos2 {
+  .logosA, .logosB {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .losMejoresBeneficios {
     margin-top: 50px;

@@ -106,8 +106,8 @@ label,input{
     @include textos($textSm,$lineHeight,$textColor,$textRegular);    
 }
 
-.logos1 figure figcaption,
-.logos2 figure figcaption{
+.logosB figure figcaption,
+.logosA figure figcaption{
     @include textos($textSm,$lineHeight,$textColor,$textThin);   
     text-align: center;
     padding: 10px auto;
