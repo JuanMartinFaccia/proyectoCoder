@@ -231,11 +231,12 @@ label, input {
 }
 
 .botonera {
-  background-color: rgb(135, 231, 158);
+  background-color: rgba(135, 231, 158, 0.7);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   grid-area: nav;
+  border-bottom: solid rgb(234, 190, 63) 2px;
 }
 .botonera img {
   width: 150px;
@@ -249,7 +250,7 @@ label, input {
   margin-right: 20px;
 }
 .botonera ul li a {
-  color: rgb(31, 27, 28);
+  color: rgb(135, 231, 158);
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
@@ -516,42 +517,36 @@ figure {
 @media (min-width: 480px) {
   .contenedor {
     display: grid;
-    overflow: hidden;
     grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: "nav" "header" "area1" "galeria" "area2" "area3" "area4" "pie";
   }
   .contenedor2 {
     display: grid;
-    overflow: hidden;
     grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: "nav" "header" "panel" "texto" "video1" "fotosP" "productosP" "p1" "p2" "presupuesto" "pie";
   }
   .contenedor3 {
     display: grid;
-    overflow: hidden;
     grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: "nav" "header" "tituloT" "video2" "textoT" "datosT" "presupuestoT" "pie";
   }
   .contenedor4 {
     display: grid;
-    overflow: hidden;
     grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: "nav" "header" "bateria" "fotoB" "tituloB" "textoB" "b1" "b2" "b3" "productoB" "pB" "presupuesto" "pie";
   }
   .contenedor5 {
     display: grid;
-    overflow: hidden;
     grid-template-rows: auto;
     grid-template-columns: 50vw 50vw;
     grid-template-areas: "nav nav" "tituloC tituloC" "beneficios beneficios" "A B" "info info" "mapa mapa" "pie pie";
   }
   .contenedor6 {
     display: grid;
-    overflow: hidden;
     grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: "error" "fotoE" "botonE";

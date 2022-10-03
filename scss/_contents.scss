@@ -185,7 +185,7 @@
 }
     //estructura
 .logos1,.logos2{
-    @include flex(column,center,none);  
+    @include flex(column,center,none);
 }
 form{
     display: flex;

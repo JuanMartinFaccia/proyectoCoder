@@ -1,7 +1,7 @@
 //Break points
 @media (min-width: 480px){
     .contenedor{
-        @include grid(hidden,100vw,auto);
+       @include grid(100vw,auto);
        grid-template-areas: 
        "nav" 
        "header"  
@@ -13,7 +13,7 @@
        "pie";
    }
    .contenedor2{
-       @include grid(hidden,100vw,auto);
+        @include grid(100vw,auto);
        grid-template-areas:
        "nav" 
        "header" 
@@ -28,7 +28,7 @@
        "pie";
    }
    .contenedor3{
-       @include grid(hidden,100vw,auto);
+       @include grid(100vw,auto);
        grid-template-areas: 
        "nav" 
        "header" 
@@ -40,7 +40,7 @@
        "pie";
    }
    .contenedor4{
-       @include grid(hidden,100vw,auto);
+       @include grid(100vw,auto);
        grid-template-areas: 
        "nav" 
        "header" 
@@ -57,7 +57,7 @@
        "pie";
    }
    .contenedor5{
-       @include grid-gral(hidden,auto);
+       @include grid-gral(auto);
        grid-template-columns: 50vw 50vw;
        grid-template-areas:
        "nav nav" 
@@ -69,7 +69,7 @@
        "pie pie";
    }
    .contenedor6{
-        @include grid(hidden,100vw,auto);
+        @include grid(100vw,auto);
         grid-template-areas:
         "error" 
         "fotoE" 

@@ -68,17 +68,15 @@
 }
 // @include flex(row,center,flex-end);
 //grid
-@mixin grid-gral($overflow,$row){
+@mixin grid-gral($row){
     display: grid;
-    overflow: hidden;
     grid-template-rows: auto;
 }
-//@include grid-gral(hidden,auto);
-@mixin grid ($overflow,$columns,$row,){
+//@include grid-gral(auto);
+@mixin grid ($columns,$row){
     display:grid;
-    overflow: hidden;
     grid-template-columns: 100vw;
     grid-template-rows: auto;
 }
-//@include grid(hidden,100vw,auto);
+//@include grid(100vw,auto);
 

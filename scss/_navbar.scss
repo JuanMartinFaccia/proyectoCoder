@@ -1,10 +1,12 @@
 //nesting  (anidacion) chekear font en botonera
 
 .botonera{
-    background-color: $mainColor;
+    background-color: $mainColorTranslucido;
     position: sticky;
     top: 0;    
     grid-area: nav;
+    border-bottom: solid map-get($map:$paleta, $key:'trece') 2px;
+
     img{
         width: 150px;
     }
@@ -15,7 +17,7 @@
             list-style: none;
             margin-right: 20px;
             a{
-                color:$secondaryColor;
+                color:$mainColor;
                 text-decoration: none;
                 font-family:$mainfont ;
                 font-size: $textSm;
