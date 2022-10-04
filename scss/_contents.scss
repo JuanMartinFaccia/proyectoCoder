@@ -16,10 +16,13 @@
     grid-area: area2;
 }
 .gridArea3{
-    grid-area: area3
+    grid-area: area3;
+    margin: 10px;
+    
 }
 .gridArea4{
-    grid-area: area4
+    grid-area: area4;
+    margin: 10px;
 }
 
 //index-estructura
@@ -173,6 +176,7 @@
 .mapaLocalizacion{
     grid-area: mapa;
     @include flex(row,center,center);
+    margin: 20px;
 }
 .losMejoresBeneficios{
     grid-area: beneficios;

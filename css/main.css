@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5 {
   color: rgb(31, 27, 28);
   font-family: "Roboto", sans-serif;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .textCenter {
@@ -279,10 +280,12 @@ label, input {
 
 .gridArea3 {
   grid-area: area3;
+  margin: 10px;
 }
 
 .gridArea4 {
   grid-area: area4;
+  margin: 10px;
 }
 
 .galeria {
@@ -443,6 +446,7 @@ label, input {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 
 .losMejoresBeneficios {
@@ -559,6 +563,9 @@ figure img {
   .contenedor {
     grid-template-columns: 25vw 50vw 25vw;
     grid-template-areas: "nav nav nav" "header header header" "area1 area1 area1" "area2 area2 area2" "area3 galeria area4" "pie pie pie";
+  }
+  .gridArea4 {
+    margin-right: 20px;
   }
   .contenedor2 {
     grid-template-columns: 30vw 20vw 20vw 30vw;
