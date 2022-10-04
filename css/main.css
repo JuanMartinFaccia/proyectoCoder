@@ -461,7 +461,7 @@ label, input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: none;
+  align-items: center;
 }
 
 form {
@@ -471,6 +471,9 @@ form {
 
 figure {
   margin: 20px;
+}
+figure img {
+  width: 125px;
 }
 
 .error {

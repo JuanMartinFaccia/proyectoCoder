@@ -185,7 +185,7 @@
 }
     //estructura
 .logos1,.logos2{
-    @include flex(column,center,none);
+    @include flex(column,center,center);
 }
 form{
     display: flex;
@@ -193,6 +193,9 @@ form{
 }
 figure{
     margin: 20px;
+    img{
+        width:125px;
+    }
 }
 
 //fin- Contacto
