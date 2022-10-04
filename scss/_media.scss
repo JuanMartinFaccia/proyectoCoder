@@ -68,9 +68,6 @@
        "mapa mapa" 
        "pie pie";
    }
-   .mapaLocalizacion{
-       width: 80%;
-   }
    .contenedor6{
         @include grid(100vw,auto);
         grid-template-areas:
@@ -170,9 +167,6 @@
         "beneficios beneficios"
         "A B"
         "pie pie";
-    }
-    .mapaLocalizacion{
-        width: 100%;
     }
     .logosA,.logosB{ 
         display: flex;  

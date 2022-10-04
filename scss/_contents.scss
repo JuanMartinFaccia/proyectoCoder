@@ -176,7 +176,7 @@
 .mapaLocalizacion{
     grid-area: mapa;
     @include flex(row,center,center);
-    margin: 20px;
+    margin: 20px;  
 }
 .losMejoresBeneficios{
     grid-area: beneficios;
