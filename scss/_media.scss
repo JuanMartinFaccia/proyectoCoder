@@ -1,5 +1,5 @@
 //Break points
-@media (min-width: 480px){
+@media (min-width: 380px){
     .contenedor{
        @include grid(100vw,auto);
        grid-template-areas: 
@@ -75,13 +75,50 @@
         "fotoE" 
         "botonE";
    }
+   .foto404 img {
+        width: 80%;
+   }
+}
+@media (min-width: 1024px){
+    .contenedor5{
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: 
+        "nav nav" 
+        "tituloC tituloC"   
+        "info mapa"
+        "beneficios beneficios"
+        "A A"
+        "B B"
+        "pie pie";
+    }
+    .logosA,.logosB{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;  
+    }
+    .contenedor6{
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas:
+        "error fotoE"
+        "botonE botonE" ;
+    }
+    .error{
+        justify-content: flex-end;
+        margin-top: 50px
+    }
+    .foto404{
+       justify-content: flex-start;
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+    .foto404 img {
+        width: 100%;
+   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1200px){
     .contenedor{
-        
         grid-template-columns: 25vw 50vw 25vw;
-        
          grid-template-areas: 
          "nav nav nav" 
          "header header header" 
@@ -168,29 +205,8 @@
         "A B"
         "pie pie";
     }
-    .logosA,.logosB{ 
-        display: flex;  
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
     .losMejoresBeneficios{
         margin-top: 50px;
-
     }
-    .contenedor6{
-        grid-template-columns: 50vw 50vw;
-        grid-template-areas:
-        "error fotoE"
-        "botonE botonE" ;
-    }
-    .error{
-        justify-content: flex-end;
-        margin-top: 50px
-    }
-    .foto404{
-       justify-content: flex-start;
-        margin-top: 50px;
-        margin-right: 50px;
-    }
+    
 }
