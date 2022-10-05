@@ -12,6 +12,10 @@ diseñé un sitio web con 5 páginas webs más 1 página de Erro 404 (UBICADA en
 "tu presupuesto" en la página de Termotanques Solares).
 Apliqué la metodología de Mobile first usando Grid, y acomodando los elementos con
 Flex y Box model.
+Tranajé con estas resoluciones: 
+Mobile:380px
+Desktop:1200px
+Retoqué algunos elementos para resolciones intermedias para 1024px
 Ordené el CSS con SASS.
 Como es una empresa ficticia los links a las redes sociales sólo redireccionan al inicio
 de cada red social.

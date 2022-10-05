@@ -80,6 +80,20 @@
    }
 }
 @media (min-width: 1024px){
+    .contenedor2{
+        grid-template-columns: 50vw 50vw;
+       grid-template-areas:
+       "nav nav" 
+       "header header" 
+       "panel panel" 
+       "texto texto" 
+       "video1 fotosP"  
+       "productosP productosP" 
+       "p1 p1"  
+       "p2 p2"
+       "presupuesto presupuesto" 
+       "pie pie";
+   }
     .contenedor5{
         grid-template-columns: 50vw 50vw;
         grid-template-areas: 
