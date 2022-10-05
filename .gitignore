@@ -1,4 +1,4 @@
 *.ai
 *.psd
-*nodemodules/
-*videos/
+nodemodules/
+videos/
