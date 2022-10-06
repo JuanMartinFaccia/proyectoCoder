@@ -17,6 +17,8 @@ Flex y Box model.
     Desktop:1200px
     Retoqué algunos elementos para resoluciones intermedias para 1024px
   Ordené el CSS con SASS.
+  Usé la extensión de Visual Studio Code para compilar, aun así creé la carpeta nodemodules
+para usarla como ejemplo en el ".gitignore".  
   Como es una empresa ficticia los links a las redes sociales sólo redireccionan al inicio
 de cada red social.
   Optimizé los videos con la herramienta Hand Brake.
