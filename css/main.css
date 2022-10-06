@@ -327,6 +327,10 @@ label, input {
   align-items: center;
 }
 
+.anchoPanel {
+  width: 80%;
+}
+
 .productosPanel {
   grid-area: productosP;
 }
@@ -608,10 +612,6 @@ figure img {
   .contenedor2 {
     grid-template-columns: 30vw 20vw 20vw 30vw;
     grid-template-areas: "nav nav nav nav" "header header header header" "panel panel panel panel" "texto video1 video1 fotosP" "productosP productosP productosP productosP" "p1 p1 p2 p2" "presupuesto presupuesto presupuesto presupuesto" "pie pie pie pie";
-  }
-  .fotosPanel {
-    margin-bottom: 140px;
-    margin-right: 20px;
   }
   .productoP2 {
     margin-right: 30px;
