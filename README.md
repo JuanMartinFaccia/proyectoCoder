@@ -21,9 +21,9 @@ Flex y Box model.
 para usarla como ejemplo en el ".gitignore".  
   Como es una empresa ficticia los links a las redes sociales sólo redireccionan al inicio
 de cada red social.
-  Optimizé los videos con la herramienta Hand Brake.
-  Optimizé las imagenes jpg a formato webp.
-  Testié el sitio web con los siguientes navegadores:
+  Optimicé los videos con la herramienta Hand Brake.
+  Optimicé las imágenes jpg a formato webp.
+  Testeé el sitio web con los siguientes navegadores:
    -Microsoft Edge- Google Crome -Opera Gx-
 
 Erro 404-->logo "tu presupuesto" en pág. Termotanques Solares. 
