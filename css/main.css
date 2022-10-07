@@ -316,7 +316,8 @@ label, input {
   grid-area: video1;
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 10px;
+  margin: 10px;
 }
 
 .fotosPanel {
